@@ -1,0 +1,262 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Minimalist Design - Matching Main PUMPSLY Site
+ * Design Philosophy: Clean, minimal, dark background with neon green accents
+ * Color Strategy: Dark background (#0A0A0F), neon green (#00FF41), subtle grays
+ * Typography: Space Grotesk (headings), Inter (body), monospace for data
+ */
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Neon green accent */
+  --color-neon-green: oklch(0.85 0.25 145);
+}
+
+:root {
+  /* New Green #00994c */
+  --primary: #00994c;
+  /* New Green #00994c */
+  --primary-foreground: oklch(1 0 0);
+  --radius: 0.5rem;
+  --background: oklch(1 0 0);
+  /* White */
+  --foreground: oklch(0.13 0.02 260);
+  /* Dark text */
+  --card: oklch(1 0 0);
+  /* White card */
+  --card-foreground: oklch(0.13 0.02 260);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.13 0.02 260);
+  --secondary: oklch(0.96 0.01 260);
+  /* Light gray for secondary */
+  --secondary-foreground: oklch(0.13 0.02 260);
+  --muted: oklch(0.96 0.01 260);
+  --muted-foreground: oklch(0.40 0.02 260);
+  --accent: #00994c;
+  /* Same as primary green */
+  --accent-foreground: oklch(1 0 0);
+  --destructive: oklch(0.60 0.25 25);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.90 0 0);
+  --input: oklch(0.90 0 0);
+  --ring: #00994c;
+  --chart-1: #00994c;
+  --chart-2: oklch(0.75 0.15 210);
+  --chart-3: oklch(0.65 0.25 290);
+  --chart-4: oklch(0.70 0.25 350);
+  --chart-5: oklch(0.80 0.20 180);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Moderate green glow for accents only */
+  .green-glow {
+    color: #00994c;
+    text-shadow: none;
+    /* Removed neon glow for clearer light theme text */
+  }
+
+  /* Subtle border with green accent */
+  .green-border {
+    border: 1px solid rgba(0, 153, 76, 0.3);
+    background: rgba(0, 153, 76, 0.05);
+  }
+
+  /* Hover effect for cards */
+  .card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .card-hover:hover {
+    border-color: rgba(0, 153, 76, 0.5);
+    background: rgba(0, 153, 76, 0.05);
+    transform: translateY(-2px);
+  }
+}
+
+/* Smooth scroll snap for full-screen slides */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+.slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  min-height: 100vh;
+  min-height: 100dvh;
+}
+
+/* Floating background animations */
+@keyframes float-slow {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(30px, -20px) scale(1.05);
+  }
+
+  50% {
+    transform: translate(-20px, 30px) scale(0.95);
+  }
+
+  75% {
+    transform: translate(20px, 20px) scale(1.02);
+  }
+}
+
+@keyframes float-medium {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  33% {
+    transform: translate(-25px, 25px) scale(1.03);
+  }
+
+  66% {
+    transform: translate(25px, -25px) scale(0.97);
+  }
+}
+
+@keyframes float-fast {
+
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  20% {
+    transform: translate(20px, -30px) scale(1.04);
+  }
+
+  40% {
+    transform: translate(-30px, 20px) scale(0.96);
+  }
+
+  60% {
+    transform: translate(30px, 30px) scale(1.02);
+  }
+
+  80% {
+    transform: translate(-20px, -20px) scale(0.98);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 60s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float-medium 45s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float-fast 35s ease-in-out infinite;
+}
