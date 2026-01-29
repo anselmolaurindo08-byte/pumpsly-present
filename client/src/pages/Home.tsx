@@ -167,7 +167,7 @@ export default function Home() {
 
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 hidden md:block">
           <button
             onClick={() => scrollToSlide(1)}
             className="animate-bounce flex items-center justify-center w-12 h-12 rounded-full bg-white border border-gray-100 shadow-lg text-[#00994c] hover:bg-gray-50 transition-all hover:scale-105"
@@ -183,25 +183,25 @@ export default function Home() {
       {/* Slide 3: $PUMPSLY Tokenomics */}
       <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
         <div className="container relative z-10 max-w-5xl px-6 origin-center scale-90 md:scale-100 transition-transform duration-500">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-bold green-glow mb-4">
+          <div className="text-center mb-6 md:mb-12">
+            <h2 className="text-4xl md:text-6xl font-bold green-glow mb-2 md:mb-4">
               $PUMPSLY
             </h2>
 
-            <h3 className="text-xl md:text-2xl font-medium mb-6 text-gray-600">
+            <h3 className="text-lg md:text-2xl font-medium mb-3 md:mb-6 text-gray-600">
               Fair Launch on Pump.fun
             </h3>
 
-            <p className="text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4 md:px-0">
               Following Pump.fun hackathon rules, we will purchase <span className="text-[#00994c] font-semibold">10% of tokens</span> at launch.
               These tokens will be distributed as rewards at the end of <span className="text-[#00994c] font-semibold">Season 0</span>.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto items-center">
             {/* Tokenomics Chart */}
-            <div className="flex justify-center w-full">
-              <div className="relative w-full max-w-[18rem] md:max-w-[26rem] aspect-square">
+            <div className="flex justify-center w-full -mt-4 md:mt-0">
+              <div className="relative w-full max-w-[14rem] md:max-w-[26rem] aspect-square">
                 {/* Donut Chart */}
                 <svg viewBox="-50 -50 300 300" className="w-full h-full transform -rotate-90 overflow-visible">
                   {/* Background Circle (Gray) */}
@@ -242,26 +242,24 @@ export default function Home() {
             </div>
 
             {/* Tokenomics Info */}
-            <div className="space-y-6">
-              <div className="p-6 rounded-lg border border-[#00994c]/30 bg-[#00994c]/5">
-                <div className="flex items-center gap-3 mb-3">
+            <div className="space-y-3 md:space-y-6 -mt-2 md:mt-0">
+              <div className="p-4 md:p-6 rounded-lg border border-[#00994c]/30 bg-[#00994c]/5">
+                <div className="flex items-center gap-3 mb-1 md:mb-3">
                   <div className="w-3 h-3 rounded-full bg-[#00994c]"></div>
-                  <h4 className="text-lg font-bold text-gray-900">10% Season 0 Rewards</h4>
+                  <h4 className="text-base md:text-lg font-bold text-gray-900">10% Season 0 Rewards</h4>
                 </div>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Purchased at launch and distributed to active traders, duel winners, and contest participants
-                  at the end of Season 0.
+                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                  Traders, duel winners, and contest participants rewards at Season 0 end.
                 </p>
               </div>
 
-              <div className="p-6 rounded-lg border border-gray-200 bg-[rgba(100,100,100,0.1)] shadow-sm">
-                <div className="flex items-center gap-3 mb-3">
+              <div className="p-4 md:p-6 rounded-lg border border-gray-200 bg-[rgba(100,100,100,0.1)] shadow-sm">
+                <div className="flex items-center gap-3 mb-1 md:mb-3">
                   <div className="w-3 h-3 rounded-full bg-white/30"></div>
-                  <h4 className="text-lg font-bold text-gray-900">90% Community</h4>
+                  <h4 className="text-base md:text-lg font-bold text-gray-900">90% Community</h4>
                 </div>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Fair launch on Pump.fun. Available for public trading from day one.
-                  True community-owned token.
+                <p className="text-xs md:text-sm text-gray-600 leading-relaxed">
+                  Fair launch on Pump.fun. True community-owned token.
                 </p>
               </div>
 
@@ -411,38 +409,38 @@ export default function Home() {
             </h3>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 max-w-4xl mx-auto">
             {/* Volume Contest */}
-            <div className="p-10 rounded-3xl border border-gray-100 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(0,153,76,0.1)] transition-all duration-500 flex flex-col h-full group">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-[#00994c]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <TrendingUp className="w-7 h-7 text-[#00994c]" />
+            <div className="p-6 md:p-10 rounded-2xl md:rounded-3xl border border-gray-100 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(0,153,76,0.1)] transition-all duration-500 flex flex-col h-full group">
+              <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-6">
+                <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-[#00994c]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <TrendingUp className="w-5 h-5 md:w-7 md:h-7 text-[#00994c]" />
                 </div>
-                <h4 className="text-2xl font-bold text-gray-900">Volume Contest</h4>
+                <h4 className="text-lg md:text-2xl font-bold text-gray-900">Volume Contest</h4>
               </div>
-              <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-                The most active traders share the prize pool. High volume equals high rewards in $PUMPSLY.
+              <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-8 leading-relaxed">
+                Active traders share the prize pool. High volume = high rewards in $PUMPSLY.
               </p>
-              <div className="mt-auto p-6 rounded-2xl bg-[#00994c]/5 border border-[#00994c]/10 group-hover:bg-[#00994c]/10 transition-colors">
-                <p className="text-xs text-gray-400 uppercase font-black tracking-widest mb-1">Prize Pool</p>
-                <p className="text-2xl font-black text-[#00994c]">10% $PUMPSLY</p>
+              <div className="mt-auto p-4 md:p-6 rounded-xl md:rounded-2xl bg-[#00994c]/5 border border-[#00994c]/10 group-hover:bg-[#00994c]/10 transition-colors">
+                <p className="text-[10px] md:text-xs text-gray-400 uppercase font-black tracking-widest mb-0.5 md:mb-1">Prize Pool</p>
+                <p className="text-lg md:text-2xl font-black text-[#00994c]">10% $PUMPSLY</p>
               </div>
             </div>
 
             {/* Referral Contest */}
-            <div className="p-10 rounded-3xl border border-gray-100 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(0,153,76,0.1)] transition-all duration-500 flex flex-col h-full group">
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-2xl bg-[#00994c]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <Users className="w-7 h-7 text-[#00994c]" />
+            <div className="p-6 md:p-10 rounded-2xl md:rounded-3xl border border-gray-100 bg-white shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(0,153,76,0.1)] transition-all duration-500 flex flex-col h-full group">
+              <div className="flex items-center gap-3 md:gap-4 mb-3 md:mb-6">
+                <div className="w-10 h-10 md:w-14 md:h-14 rounded-xl md:rounded-2xl bg-[#00994c]/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                  <Users className="w-5 h-5 md:w-7 md:h-7 text-[#00994c]" />
                 </div>
-                <h4 className="text-2xl font-bold text-gray-900">Referral Contest</h4>
+                <h4 className="text-lg md:text-2xl font-bold text-gray-900">Referral Contest</h4>
               </div>
-              <p className="text-gray-600 mb-8 leading-relaxed text-lg">
-                Invite your network, climb the rankings, and secure your spot on the podium for cash prizes.
+              <p className="text-sm md:text-lg text-gray-600 mb-4 md:mb-8 leading-relaxed">
+                Invite network, climb rankings, and secure spot for cash prizes.
               </p>
-              <div className="mt-auto p-6 rounded-2xl bg-[#00994c]/5 border border-[#00994c]/10 group-hover:bg-[#00994c]/10 transition-colors">
-                <p className="text-xs text-gray-400 uppercase font-black tracking-widest mb-1">Prize Pool</p>
-                <p className="text-2xl font-black text-[#00994c]">$5,000 USD</p>
+              <div className="mt-auto p-4 md:p-6 rounded-xl md:rounded-2xl bg-[#00994c]/5 border border-[#00994c]/10 group-hover:bg-[#00994c]/10 transition-colors">
+                <p className="text-[10px] md:text-xs text-gray-400 uppercase font-black tracking-widest mb-0.5 md:mb-1">Prize Pool</p>
+                <p className="text-lg md:text-2xl font-black text-[#00994c]">$5,000 USD</p>
               </div>
             </div>
           </div>
