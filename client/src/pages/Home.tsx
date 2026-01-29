@@ -214,18 +214,6 @@ export default function Home() {
                     strokeWidth="30"
                   />
 
-                  {/* Glowing "Trace" Effect (Behind) - Reduced blur & overflow fix */}
-                  <circle
-                    cx="100"
-                    cy="100"
-                    r="80"
-                    fill="none"
-                    stroke="#00994c"
-                    strokeWidth="30"
-                    strokeDasharray="60 442"
-                    className="opacity-20 blur-sm"
-                  />
-
                   {/* Main Green Segment (10%) */}
                   <circle
                     cx="100"
@@ -329,14 +317,14 @@ export default function Home() {
             Winner takes all <span className="text-[#00994c] font-semibold">$PUMPSLY</span> tokens.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto mb-12">
 
             {/* Step 1 */}
-            <div className="group relative p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <div className="absolute top-2 right-4 text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+              <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 01
               </div>
-              <div className="relative z-10 w-12 h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
                 <div className="flex items-center justify-center gap-1">
                   <img src="/images/solana-logo.png" alt="SOL" className="w-3.5 h-3.5 object-contain opacity-60 group-hover:opacity-100 transition-opacity" />
                   <span className="text-gray-300 text-xs">/</span>
@@ -350,11 +338,11 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="group relative p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <div className="absolute top-2 right-4 text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+              <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 02
               </div>
-              <div className="relative z-10 w-12 h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
                 <TrendingUp className="w-6 h-6 text-gray-400 group-hover:text-[#00994c] transition-colors" />
               </div>
               <h4 className="relative z-10 font-bold text-gray-900 mb-2 text-lg">Predict</h4>
@@ -364,11 +352,11 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="group relative p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <div className="absolute top-2 right-4 text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+              <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 03
               </div>
-              <div className="relative z-10 w-12 h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
                 <BarChart3 className="w-6 h-6 text-gray-400 group-hover:text-[#00994c] transition-colors" />
               </div>
               <h4 className="relative z-10 font-bold text-gray-900 mb-2 text-lg">Watch</h4>
@@ -378,11 +366,11 @@ export default function Home() {
             </div>
 
             {/* Step 4 */}
-            <div className="group relative p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <div className="absolute top-2 right-4 text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+              <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 04
               </div>
-              <div className="relative z-10 w-12 h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
                 <Trophy className="w-6 h-6 text-gray-400 group-hover:text-[#00994c] transition-colors" />
               </div>
               <h4 className="relative z-10 font-bold text-gray-900 mb-2 text-lg">Win</h4>
@@ -513,6 +501,26 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {/* Mobile Navigation Arrows */}
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-2 md:hidden">
+        {currentSlide > 0 && (
+          <button
+            onClick={() => scrollToSlide(currentSlide - 1)}
+            className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm border border-gray-200 shadow-lg flex items-center justify-center text-[#00994c]"
+          >
+            <ArrowDown className="w-6 h-6 rotate-180" />
+          </button>
+        )}
+        {currentSlide < totalSlides - 1 && (
+          <button
+            onClick={() => scrollToSlide(currentSlide + 1)}
+            className="w-12 h-12 rounded-full bg-white/90 backdrop-blur-sm border border-gray-200 shadow-lg flex items-center justify-center text-[#00994c]"
+          >
+            <ArrowDown className="w-6 h-6" />
+          </button>
+        )}
+      </div>
     </div>
   );
 }
