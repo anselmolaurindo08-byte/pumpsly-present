@@ -54,7 +54,7 @@ export default function Home() {
             }}
           >
             <motion.div
-              className="opacity-20 blur-[1px]"
+              className="opacity-20 blur-[1px] md:opacity-20 opacity-0"
               animate={{
                 y: [0, -20, 0],
                 rotate: [0, 10, 0],
@@ -64,7 +64,7 @@ export default function Home() {
                 rotate: { duration: 5, repeat: Infinity, ease: "easeInOut" }
               }}
             >
-              <img src="/images/solana-logo.png" alt="Solana" className="w-32 h-32 object-contain grayscale" />
+              <img src="/images/solana-logo.png" alt="Solana" className="w-16 h-16 md:w-32 md:h-32 object-contain grayscale" />
             </motion.div>
           </motion.div>
 
@@ -79,7 +79,7 @@ export default function Home() {
             }}
           >
             <motion.div
-              className="opacity-15 blur-[1px]"
+              className="opacity-15 blur-[1px] md:opacity-15 opacity-0"
               animate={{
                 y: [0, 30, 0],
                 scale: [1, 1.1, 1],
@@ -89,7 +89,7 @@ export default function Home() {
                 scale: { duration: 7, repeat: Infinity, ease: "easeInOut" }
               }}
             >
-              <img src="/images/pumpfun-logo.png" alt="Pump" className="w-40 h-40 object-contain grayscale" />
+              <img src="/images/pumpfun-logo.png" alt="Pump" className="w-20 h-20 md:w-40 md:h-40 object-contain grayscale" />
             </motion.div>
           </motion.div>
 
@@ -104,7 +104,7 @@ export default function Home() {
             }}
           >
             <motion.div
-              className="opacity-40 blur-[1px]"
+              className="opacity-40 blur-[1px] md:opacity-40 opacity-20"
               animate={{
                 y: [0, -25, 0],
                 rotate: [0, -5, 0],
@@ -114,7 +114,7 @@ export default function Home() {
                 rotate: { duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }
               }}
             >
-              <img src="/images/pumpsly-mark.png" alt="Pumpsly Mark" className="w-80 h-80 object-contain grayscale" />
+              <img src="/images/pumpsly-mark.png" alt="Pumpsly Mark" className="w-32 h-32 md:w-80 md:h-80 object-contain grayscale" />
             </motion.div>
           </motion.div>
 
@@ -160,7 +160,7 @@ export default function Home() {
             />
           </div>
 
-          <h2 className="text-xl md:text-2xl font-medium mb-12 text-gray-600 max-w-2xl mx-auto leading-relaxed">
+          <h2 className="text-lg md:text-2xl font-medium mb-12 text-gray-600 max-w-2xl mx-auto leading-relaxed">
             Stop trying to figure out politics and other BS.<br />
             Bet on what you're actually an expert in.
           </h2>
@@ -200,8 +200,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-center">
             {/* Tokenomics Chart */}
-            <div className="flex justify-center">
-              <div className="relative w-[26rem] h-[26rem]">
+            <div className="flex justify-center w-full">
+              <div className="relative w-full max-w-[18rem] md:max-w-[26rem] aspect-square">
                 {/* Donut Chart */}
                 <svg viewBox="-50 -50 300 300" className="w-full h-full transform -rotate-90 overflow-visible">
                   {/* Background Circle (Gray) */}
@@ -276,7 +276,7 @@ export default function Home() {
         <div className="container relative z-10 max-w-6xl">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
-              <h2 className="text-4xl md:text-6xl font-bold green-glow">
+              <h2 className="text-2xl md:text-6xl font-bold green-glow">
                 PREDICTION MARKETS
               </h2>
             </div>
@@ -317,7 +317,7 @@ export default function Home() {
       <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
         <div className="container relative z-10 max-w-5xl text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <h2 className="text-4xl md:text-6xl font-bold text-gray-900">
+            <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
               PREDICTION <span className="green-glow">DUELS</span>
             </h2>
           </div>
@@ -331,7 +331,7 @@ export default function Home() {
             Winner takes all <span className="text-[#00994c] font-semibold">$PUMPSLY</span> tokens.
           </p>
 
-          <div className="grid md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 last:grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-12">
 
             {/* Step 1 */}
             <div className="group relative p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
@@ -402,8 +402,8 @@ export default function Home() {
       {/* Slide 4: Contests */}
       <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px] py-8">
         <div className="container relative z-10 max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-6xl font-bold green-glow mb-4">
+          <div className="text-center mb-12 px-4">
+            <h2 className="text-3xl md:text-6xl font-bold green-glow mb-4 uppercase tracking-tight">
               SEASON 0 CONTESTS
             </h2>
             <h3 className="text-xl md:text-2xl font-medium text-gray-600">
@@ -452,8 +452,8 @@ export default function Home() {
       {/* Slide 6: Final CTA */}
       <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
         <div className="container relative z-10 text-center max-w-4xl mx-auto">
-          <div className="mb-8">
-            <h2 className="text-5xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">
+          <div className="mb-8 p-4">
+            <h2 className="text-3xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">
               JOIN THE <span className="green-glow">REVOLUTION</span>
             </h2>
           </div>
