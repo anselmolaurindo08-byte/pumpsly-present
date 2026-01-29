@@ -175,23 +175,19 @@
   }
 }
 
-/* Smooth scroll snap for full-screen slides - Desktop Only */
-@media (min-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-
-  .slide {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-  }
+/* Smooth scroll snap for full-screen slides */
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 
 .slide {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
   min-height: 100vh;
   min-height: 100dvh;
   position: relative;
+  overflow: hidden;
 }
 
 /* Floating background animations */

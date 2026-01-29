@@ -137,8 +137,8 @@ export default function Home() {
       </div>
 
       {/* Slide 1: Hackathon Participant */}
-      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px] py-20 md:py-0">
-        <div className="container relative z-10 text-center max-w-4xl px-6">
+      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
+        <div className="container relative z-10 text-center max-w-4xl px-6 origin-center scale-90 md:scale-100 transition-transform duration-500">
           <div className="mb-8 flex justify-center items-center gap-4">
             <img
               src="/images/pumpfun-logo.png"
@@ -181,8 +181,8 @@ export default function Home() {
 
 
       {/* Slide 3: $PUMPSLY Tokenomics */}
-      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px] py-16 md:py-0">
-        <div className="container relative z-10 max-w-5xl px-6">
+      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
+        <div className="container relative z-10 max-w-5xl px-6 origin-center scale-90 md:scale-100 transition-transform duration-500">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-6xl font-bold green-glow mb-4">
               $PUMPSLY
@@ -272,8 +272,8 @@ export default function Home() {
       </section>
 
       {/* Slide 4: Prediction Market */}
-      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px] py-16 md:py-0">
-        <div className="container relative z-10 max-w-6xl px-6">
+      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
+        <div className="container relative z-10 max-w-6xl px-6 origin-center scale-90 md:scale-100 transition-transform duration-500">
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
               <h2 className="text-2xl md:text-6xl font-bold green-glow">
@@ -314,8 +314,8 @@ export default function Home() {
       </section>
 
       {/* Slide 3: Duels */}
-      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px] py-16 md:py-0">
-        <div className="container relative z-10 max-w-5xl text-center px-6">
+      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
+        <div className="container relative z-10 max-w-5xl text-center px-6 origin-center scale-85 md:scale-100 transition-transform duration-500">
           <div className="flex items-center justify-center gap-3 mb-4">
             <h2 className="text-3xl md:text-6xl font-bold text-gray-900">
               PREDICTION <span className="green-glow">DUELS</span>
@@ -450,8 +450,8 @@ export default function Home() {
       </section>
 
       {/* Slide 6: Final CTA */}
-      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px] py-16 md:py-0">
-        <div className="container relative z-10 text-center max-w-4xl mx-auto px-6">
+      <section className="slide relative flex items-center justify-center bg-transparent backdrop-blur-[2px]">
+        <div className="container relative z-10 text-center max-w-4xl mx-auto px-6 origin-center scale-90 md:scale-100 transition-transform duration-500">
           <div className="mb-8 p-4">
             <h2 className="text-3xl md:text-7xl font-black mb-6 text-gray-900 leading-tight">
               JOIN THE <span className="green-glow">REVOLUTION</span>
