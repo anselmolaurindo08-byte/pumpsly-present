@@ -320,11 +320,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto mb-12">
 
             {/* Step 1 */}
-            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center md:items-start md:text-left h-full aspect-square md:aspect-auto">
               <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 01
               </div>
-              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-2 md:mb-4 transition-colors">
                 <div className="flex items-center justify-center gap-1">
                   <img src="/images/solana-logo.png" alt="SOL" className="w-3.5 h-3.5 object-contain opacity-60 group-hover:opacity-100 transition-opacity" />
                   <span className="text-gray-300 text-xs">/</span>
@@ -338,11 +338,11 @@ export default function Home() {
             </div>
 
             {/* Step 2 */}
-            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center md:items-start md:text-left h-full aspect-square md:aspect-auto">
               <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 02
               </div>
-              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-2 md:mb-4 transition-colors">
                 <TrendingUp className="w-6 h-6 text-gray-400 group-hover:text-[#00994c] transition-colors" />
               </div>
               <h4 className="relative z-10 font-bold text-gray-900 mb-2 text-lg">Predict</h4>
@@ -352,11 +352,11 @@ export default function Home() {
             </div>
 
             {/* Step 3 */}
-            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center md:items-start md:text-left h-full aspect-square md:aspect-auto">
               <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 03
               </div>
-              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-2 md:mb-4 transition-colors">
                 <BarChart3 className="w-6 h-6 text-gray-400 group-hover:text-[#00994c] transition-colors" />
               </div>
               <h4 className="relative z-10 font-bold text-gray-900 mb-2 text-lg">Watch</h4>
@@ -366,11 +366,11 @@ export default function Home() {
             </div>
 
             {/* Step 4 */}
-            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center md:items-start md:text-left h-full">
+            <div className="group relative p-4 md:p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center md:items-start md:text-left h-full aspect-square md:aspect-auto">
               <div className="absolute top-2 right-4 text-4xl md:text-5xl font-black text-gray-200 group-hover:text-[#00994c]/20 transition-colors select-none">
                 04
               </div>
-              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-3 md:mb-4 transition-colors">
+              <div className="relative z-10 w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-50 group-hover:bg-[#00994c]/10 flex items-center justify-center mb-2 md:mb-4 transition-colors">
                 <Trophy className="w-6 h-6 text-gray-400 group-hover:text-[#00994c] transition-colors" />
               </div>
               <h4 className="relative z-10 font-bold text-gray-900 mb-2 text-lg">Win</h4>
