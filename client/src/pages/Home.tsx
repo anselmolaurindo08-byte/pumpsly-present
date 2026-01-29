@@ -331,7 +331,7 @@ export default function Home() {
             Winner takes all <span className="text-[#00994c] font-semibold">$PUMPSLY</span> tokens.
           </p>
 
-          <div className="grid grid-cols-1 last:grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 max-w-5xl mx-auto mb-12">
 
             {/* Step 1 */}
             <div className="group relative p-6 rounded-2xl border border-gray-100 bg-white shadow-[0_2px_10px_-4px_rgba(0,0,0,0.05)] hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
